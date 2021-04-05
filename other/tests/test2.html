@@ -1,0 +1,16 @@
+<script>
+    const template = document.querySelector('template');
+    const node = document.importNode(template.content, true);
+    document.body.appendChild(node);
+</script>
+
+<fieldset id="templates">
+    <legend>Choose template</legend>
+
+    <label>
+        <input type="radio" name="template" value="book-template" checked> Template One
+    </label>
+    <label>
+        <input type="radio" name="template" value="book-template-2"> Template Two
+    </label>
+</fieldset>
